@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Expert Session | NFSU Dharwad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="fluent-dark">
+    <!-- Interactive Swarm Background -->
+    <canvas id="swarm"></canvas>
+
+    <!-- Immersive Background Elements -->
+    <div class="mica-effect"></div>
+    <div class="cyber-grid"></div>
+    <div class="scan-line"></div>
+    <div class="gradient-sphere sphere-1"></div>
+    <div class="gradient-sphere sphere-2"></div>
+    <div class="binary-overlay" id="binary-bg"></div>
+
+    <header id="fluent-header">
+        <nav class="container">
+            <div class="brand-wrapper animate-fade-in">
+                <div class="brand-logo-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/b/b3/National_Forensic_Sciences_University_Logo.png" alt="NFSU Logo" class="main-nav-logo">
+                </div>
+                <div class="brand-text">
+                    <span class="uni-name">National Forensic Sciences University</span>
+                    <span class="dept-name">Training & Placement Cell | Dharwad Campus</span>
+                </div>
+            </div>
+            <div class="header-status">
+                <span class="pulse-dot"></span>
+                <span class="status-text">LIVE SESSION ENROLLMENT OPEN</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-fluent">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="badge-fluent animate-pop-in">
+                        <div class="ms-logo-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="ms-mini-logo">
+                        </div>
+                        <span class="typing-text">ALUMNI CONNECT SERIES 2026</span>
+                    </div>
+                    
+                    <h1 class="glitch-wrapper reveal-stagger">
+                        <span class="glitch" data-text="Navigating Cybersecurity">Navigating <span class="text-gradient">Cybersecurity</span></span>
+                        <br>
+                        <span class="glitch" data-text="Careers at Scale">Careers at Scale</span>
+                    </h1>
+
+                    <p class="hero-subtitle reveal-stagger" id="typewriter">
+                        An exclusive technical seminar featuring insights from Microsoft's security engineering landscape.
+                    </p>
+                    
+                    <div class="event-capsule reveal-stagger">
+                        <div class="capsule-item" data-tooltip="Save the Date">
+                            <i data-lucide="calendar"></i>
+                            <span>Jan 17, 2026</span>
+                        </div>
+                        <div class="capsule-item" data-tooltip="Starting Sharp">
+                            <i data-lucide="clock"></i>
+                            <span>3:00 PM IST</span>
+                        </div>
+                        <div class="capsule-item" data-tooltip="Join via Teams">
+                            <i data-lucide="video"></i>
+                            <span>Microsoft Teams</span>
+                        </div>
+                    </div>
+
+                    <div class="button-group reveal-stagger">
+                        <a href="#" class="btn-fluent primary magnetic shimmer-btn">
+                            <span>Register Now</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#" class="btn-fluent secondary magnetic">
+                            <span>Join the Meeting</span>
+                            <i data-lucide="video"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="speaker-highlight container">
+            <div class="fluent-card speaker-card reveal">
+                <div class="card-glow"></div>
+                <div class="speaker-layout">
+                    <div class="speaker-visual">
+                        <div class="image-wrapper">
+                            <div class="image-border-animate"></div>
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" alt="Shashank Malik" class="speaker-img">
+                            <div class="company-badge-float">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speaker-details">
+                        <div class="role-tag">EXPERT SPEAKER</div>
+                        <h2 class="reveal-text">Shashank Malik</h2>
+                        <p class="role reveal-text">Cyber Security Engineer @ Microsoft</p>
+                        
+                        <div class="experience-timeline">
+                            <div class="timeline-item reveal-left" style="--delay: 0.1s">
+                                <div class="timeline-dot"></div>
+                                <span class="time">Present</span>
+                                <span class="exp">Microsoft | Cyber Security Engineer</span>
+                            </div>
+                            <div class="timeline-item reveal-left" style="--delay: 0.2s">
+                                <div class="timeline-dot"></div>
+                                <span class="time">2022 - 2024</span>
+                                <span class="exp">Qualcomm | Cyber Security Engineer</span>
+                            </div>
+                            <div class="timeline-item reveal-left" style="--delay: 0.3s">
+                                <div class="timeline-dot"></div>
+                                <span class="time">2021</span>
+                                <span class="exp">Gurugram Police | Intern</span>
+                            </div>
+                        </div>
+
+                        <div class="education-tag reveal-pop">
+                            <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+                            <span>Alumnus, M.Sc. Cyber Security, NFSU</span>
+                        </div>
+                        
+                        <p class="speaker-bio reveal-text">
+                            Specializing in <span class="highlight">Threat Analysis</span>, <span class="highlight">IPS</span>, and <span class="highlight">Intrusion Detection</span>. Shashank leverages his experience from Qualcomm and HCLTech to secure Microsoft's global cloud infrastructure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="agenda container">
+            <div class="section-header reveal">
+                <h3 class="section-label">Session Blueprint</h3>
+                <div class="section-line"></div>
+            </div>
+            <div class="fluent-grid">
+                <div class="agenda-card reveal-card" style="--i: 1">
+                    <div class="card-border-beam"></div>
+                    <div class="card-inner-glow"></div>
+                    <div class="card-index">01</div>
+                    <div class="icon-box animate-icon"><i data-lucide="shield-check"></i></div>
+                    <h4>Enterprise Security</h4>
+                    <p>Understanding how global tech giants manage threat landscapes at hyperscale.</p>
+                </div>
+                <div class="agenda-card reveal-card" style="--i: 2">
+                    <div class="card-border-beam"></div>
+                    <div class="card-inner-glow"></div>
+                    <div class="card-index">02</div>
+                    <div class="icon-box animate-icon"><i data-lucide="map"></i></div>
+                    <h4>Career Roadmap</h4>
+                    <p>Transitioning from NFSU to Tier-1 product companies like Microsoft & Qualcomm.</p>
+                </div>
+                <div class="agenda-card reveal-card" style="--i: 3">
+                    <div class="card-border-beam"></div>
+                    <div class="card-inner-glow"></div>
+                    <div class="card-index">03</div>
+                    <div class="icon-box animate-icon"><i data-lucide="cpu"></i></div>
+                    <h4>Skill Evolution</h4>
+                    <p>The shift from Intrusion Detection to advanced automated Threat Analysis.</p>
+                </div>
+                <div class="agenda-card reveal-card" style="--i: 4">
+                    <div class="card-border-beam"></div>
+                    <div class="card-inner-glow"></div>
+                    <div class="card-index">04</div>
+                    <div class="icon-box animate-icon"><i data-lucide="briefcase"></i></div>
+                    <h4>Interview Prep</h4>
+                    <p>Decoding the technical rounds for Cyber Security roles in the 2026 landscape.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="minimal-footer">
+        <div class="container footer-content">
+            <p class="footer-copyright">&copy; 2026 T&P Cell. All technical rights reserved. Built for Digital Excellence.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
